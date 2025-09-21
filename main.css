@@ -1,51 +1,91 @@
 :root {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #2f2f2f;
-  background-color: #ffffff;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #2f2f2f;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
+
+body {
+    height: 20000px;
+}
+
 div {
-  text-align: center;
+    text-align: center;
 }
-img {
-  scale: 1;
-}
+
 button {
-  margin-top: 5rem;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  color: #ffffff;
-  background-color: #0f0f0f98;
-  transition: border-color 0.25s, filter 0.5s, scale 0.5s;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  outline: none;
-  cursor: pointer;
-  filter: none;
-  scale: 1;
+    margin: 4rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    color: #ffffff;
+    background-color: #0f0f0f98;
+    transition: border-color 0.25s, filter 0.5s, scale 0.5s;
+    cursor: pointer;
 }
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
 button:hover {
-  filter: drop-shadow(0 0 0.75rem #394ed8);
-  border-color: #394ed8;
-  scale: 1.25;
+    filter: drop-shadow(0 0 0.75rem #ffffff);
+    border-color: #ffffff;
+    scale: 1.25;
 }
+
 button:active {
-  border-color: #394ed8;
-  background-color: #0f0f0f69;
+    border-color: #2f2f2f;
+    background-color: #0f0f0f69;
 }
+
 #title {
-  font-size: 64px;
-  line-height: 1;
+    font-size: 64px;
+    line-height: 1;
+}
+
+p {
+    margin: 0;
+}
+
+canvas {
+    width: 100%;
+    height: 25rem;
+}
+
+#c {
+    position: absolute; /* Or 'absolute' if you want it to scroll with content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Puts the canvas behind other content */
 }
 
 p {
