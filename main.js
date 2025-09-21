@@ -52,9 +52,6 @@ async function main() {
     let canvas = document.getElementById("c");
     let gl = canvas.getContext('webgl2');
 
-    let slider = document.getElementById("textSize");
-    let out = document.getElementById("read");
-
     let fragmentSource = await fetch('assets/shader.frag')
         .then(res => res.text());
     let vertexSource = await fetch('assets/shader.vert')
@@ -104,9 +101,7 @@ async function main() {
 
         gl.uniform2f(resolutionUniformLocation, gl.canvas.width, gl.canvas.height);
         gl.uniform1f(timeUniformLocation, t);
-        gl.uniform1f(textSizeUniformLocation, slider.value);
-
-        out.innerText = slider.value;
+        gl.uniform1f(textSizeUniformLocation, 4);
 
         gl.vertexAttribPointer(
             positionAttributeLocation, 2, gl.FLOAT, false, 0, 0)
