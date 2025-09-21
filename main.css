@@ -87,7 +87,3 @@ canvas {
     height: 100%;
     z-index: -1; /* Puts the canvas behind other content */
 }
-
-p {
-margin: 0;
-}
