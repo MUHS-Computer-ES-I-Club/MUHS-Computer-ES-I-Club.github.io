@@ -55,9 +55,9 @@ async function main() {
     let slider = document.getElementById("textSize");
     let out = document.getElementById("read");
 
-    let fragmentSource = await fetch('style/assets/shader.frag')
+    let fragmentSource = await fetch('assets/shader.frag')
         .then(res => res.text());
-    let vertexSource = await fetch('style/assets/shader.vert')
+    let vertexSource = await fetch('assets/shader.vert')
         .then(res => res.text());
 
     if (!gl) {
@@ -121,3 +121,4 @@ async function main() {
 }
 
 window.onload = main;
+
